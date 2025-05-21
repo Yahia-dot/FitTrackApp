@@ -9,7 +9,7 @@ const Header = ({
   logoStyle, 
   titleStyle, 
   dateStyle,
-  logoSize = 32 
+  logoSize = 20, 
 }) => {
   return (
     <View style={[styles.headerWrapper, style]}>
@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   dateText: {
-    marginTop: 8,
+    fontSize: 13.5,
+    marginTop: 1,
     opacity: 0.8,
   },
 });
