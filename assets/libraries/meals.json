@@ -1,0 +1,440 @@
+{
+  "breakfast": [
+    {
+      "title": "Greek Yogurt Protein Mousse",
+      "ingredients": [
+        "190 g Greek yogurt (full fat)",
+        "35 g chocolate protein powder",
+        "15 g unsweetened cocoa powder",
+        "15 g honey or sugar-free syrup",
+        "30 g almond milk"
+      ],
+      "calories": 305,
+      "instructions": "In a mixing bowl, stir together Greek yogurt, protein powder, and cocoa powder until fully combined. Add honey and almond milk, mixing until smooth. Serve chilled.",
+      "image": "https://drive.google.com/file/d/1tcc6VfezwrGet4UUljNRZ4lnoMP9q51a/view?usp=drive_link"
+    },
+    {
+      "title": "Avocado Toast with Burrata",
+      "ingredients": [
+        "1 slice whole-grain bread",
+        "75 g avocado, sliced",
+        "28 g burrata cheese",
+        "Salt and pepper to taste",
+        "Optional: cherry tomatoes, arugula"
+      ],
+      "calories": 350,
+      "instructions": "Toast the bread slice. Layer with avocado slices and burrata cheese. Season with salt and pepper. Top with cherry tomatoes and arugula if desired.",
+      "image": "https://drive.google.com/file/d/1qp_WL0XwjI_3EKTIkZcZryoyCnKnzuY-/view?usp=drive_link"
+    },
+    {
+      "title": "Spinach & Egg Scramble with Raspberries",
+      "ingredients": [
+        "2 eggs",
+        "30 g fresh spinach",
+        "60 g raspberries",
+        "5 g olive oil",
+        "Salt and pepper to taste"
+      ],
+      "calories": 300,
+      "instructions": "Heat olive oil in a skillet over medium heat. Add spinach and cook until wilted. Beat eggs, pour into the skillet, and scramble with spinach. Serve with raspberries on the side.",
+      "image": "https://drive.google.com/file/d/1CxMnpTJ4iRPaRnh9bCs1_ryIpm99CIb1/view?usp=drive_link"
+    },
+    {
+      "title": "Protein Pancakes with Banana",
+      "ingredients": [
+        "1 banana",
+        "2 eggs",
+        "40 g oats",
+        "30 g protein powder",
+        "5 g baking powder"
+      ],
+      "calories": 400,
+      "instructions": "Blend all ingredients until smooth. Pour batter onto a heated non-stick skillet, cooking pancakes until bubbles form and edges are set. Flip and cook until golden brown.",
+      "image": "https://drive.google.com/file/d/1XlwBh1CS5FbH6dVSSWeKK23nGPIhjong/view?usp=drive_link"
+    },
+    {
+      "title": "Chia Seed Smoothie with Berries",
+      "ingredients": [
+        "240 g almond milk",
+        "60 g mixed berries",
+        "15 g chia seeds",
+        "30 g vanilla protein powder",
+        "5 g honey"
+      ],
+      "calories": 250,
+      "instructions": "Combine all ingredients in a blender and blend until smooth. Serve immediately.",
+      "image": "https://drive.google.com/file/d/1Ab2Xnp1OgpGq6EfW2tWeon8JFom6CrNQ/view?usp=drive_link"
+    },
+    {
+      "title": "Oatmeal with Almond Butter and Banana",
+      "ingredients": [
+        "40 g rolled oats",
+        "240 g water or milk",
+        "15 g almond butter",
+        "½ banana, sliced",
+        "5 g cinnamon"
+      ],
+      "calories": 350,
+      "instructions": "Cook oats with water or milk according to package instructions. Stir in almond butter and cinnamon. Top with banana slices.",
+      "image": "https://drive.google.com/file/d/1Amjxx-CI_UDDXaUsQx7wyM_uwdrcawF2/view?usp=drive_link"
+    },
+    {
+      "title": "Egg, Tomato & Feta Breakfast Pita",
+      "ingredients": [
+        "1 whole wheat pita",
+        "2 eggs",
+        "40 g diced tomatoes",
+        "30 g crumbled feta cheese",
+        "Salt and pepper to taste"
+      ],
+      "calories": 400,
+      "instructions": "Scramble eggs with tomatoes and feta cheese. Season with salt and pepper. Stuff the mixture into the pita pocket.",
+      "image": "https://drive.google.com/file/d/1R44vHzFs-DbN4r9K7VzEJnhVfLN_tQee/view?usp=drive_link"
+    },
+    {
+      "title": "Cottage Cheese with Pineapple",
+      "ingredients": [
+        "240 g low-fat cottage cheese",
+        "120 g pineapple chunks",
+        "15 g chia seeds"
+      ],
+      "calories": 300,
+      "instructions": "In a bowl, combine cottage cheese, pineapple chunks, and chia seeds. Mix well and serve.",
+      "image": "https://drive.google.com/file/d/1ukaRU4S8V_PkeBRw6gMIdRCPFkI_RBxw/view?usp=drive_link"
+    },
+    {
+      "title": "Peanut Butter Banana Toast",
+      "ingredients": [
+        "1 slice whole-grain bread",
+        "15 g peanut butter",
+        "½ banana, sliced",
+        "5 g honey",
+        "Sprinkle of cinnamon"
+      ],
+      "calories": 320,
+      "instructions": "Toast the bread slice. Spread peanut butter, layer banana slices, drizzle honey, and sprinkle cinnamon on top.",
+      "image": "https://drive.google.com/file/d/1Otb8ixKyarn8lTwDkNcr73HD29jbNB_I/view?usp=drive_link"
+    },
+    {
+      "title": "Breakfast Tostada",
+      "ingredients": [
+        "1 corn tostada shell",
+        "1 egg",
+        "60 g black beans",
+        "30 g salsa",
+        "15 g shredded cheese",
+        "Chopped cilantro"
+      ],
+      "calories": 350,
+      "instructions": "Cook the egg to your preference. On the tostada shell, layer black beans, cooked egg, salsa, and shredded cheese. Garnish with chopped cilantro.",
+      "image": "https://drive.google.com/file/d/1s4GRTC-MRuc7ey-spDH6zR9O1LcUrkHC/view?usp=drive_link"
+    }
+  ],
+  "lunch": [
+    {
+      "title": "Grilled Chicken Salad with Avocado",
+      "ingredients": [
+        "113 g grilled chicken breast",
+        "60 g mixed greens",
+        "75 g avocado, sliced",
+        "40 g cherry tomatoes",
+        "30 g balsamic vinaigrette"
+      ],
+      "calories": 450,
+      "instructions": "In a bowl, combine mixed greens, cherry tomatoes, and avocado slices. Top with sliced grilled chicken and drizzle with balsamic vinaigrette.",
+      "image": "https://drive.google.com/file/d/1c7jdV503_7IAwka5FvdmJ3_l2slqkxNW/view?usp=drive_link"
+    },
+    {
+      "title": "Quinoa and Black Bean Bowl",
+      "ingredients": [
+        "85 g cooked quinoa",
+        "120 g black beans",
+        "40 g corn kernels",
+        "40 g diced bell peppers",
+        "30 g lime juice",
+        "15 g chopped cilantro"
+      ],
+      "calories": 400,
+      "instructions": "In a bowl, mix cooked quinoa, black beans, corn, and bell peppers. Drizzle with lime juice and sprinkle with chopped cilantro.",
+      "image": "https://drive.google.com/file/d/18uy8axLHh4OWYn5JOF8vLhqmGvDxwdkT/view?usp=drive_link"
+    },
+    {
+      "title": "Turkey and Hummus Wrap",
+      "ingredients": [
+        "1 whole wheat tortilla",
+        "85 g sliced turkey breast",
+        "30 g hummus",
+        "30 g spinach leaves",
+        "40 g shredded carrots"
+      ],
+      "calories": 350,
+      "instructions": "Spread hummus on the tortilla. Layer with turkey slices, spinach, and shredded carrots. Roll up tightly and slice in half.",
+      "image": "https://drive.google.com/file/d/1Jd1IHeXLtSkTYBNk-gVdC9OPi2RuUj-P/view?usp=drive_link"
+    },
+    {
+      "title": "Lentil Soup with Vegetables",
+      "ingredients": [
+        "200 g cooked lentils",
+        "240 g vegetable broth",
+        "60 g diced carrots",
+        "30 g chopped spinach",
+        "5 g olive oil",
+        "Salt and pepper to taste"
+      ],
+      "calories": 300,
+      "instructions": "In a pot, heat olive oil and sauté carrots until tender. Add vegetable broth and lentils, bringing to a boil. Reduce heat, add spinach, and simmer for 10 minutes. Season with salt and pepper.",
+      "image": "https://drive.google.com/file/d/1mW3kueppDrAwdzT4NbdPd18gLYr0uD1v/view?usp=drive_link"
+    },
+    {
+      "title": "Tuna Salad Lettuce Wraps",
+      "ingredients": [
+        "1 can tuna in water, drained",
+        "30 g Greek yogurt",
+        "15 g Dijon mustard",
+        "1 celery stalk, diced",
+        "4 large lettuce leaves"
+      ],
+      "calories": 250,
+      "instructions": "In a bowl, mix tuna, Greek yogurt, Dijon mustard, and diced celery. Spoon the mixture into lettuce leaves and wrap.",
+      "image": "https://drive.google.com/file/d/1_ra_JSNryeUW7174xYzPVBe54rnjIJ-R/view?usp=drive_link"
+    },
+    {
+      "title": "Egg Salad Sandwich on Whole Grain Bread",
+      "ingredients": [
+        "2 slices whole grain bread",
+        "2 hard-boiled eggs, chopped",
+        "15 g light mayonnaise",
+        "5 g mustard",
+        "Salt and pepper to taste"
+      ],
+      "calories": 350,
+      "instructions": "In a bowl, combine chopped eggs, mayonnaise, mustard, salt, and pepper. Spread the mixture between the bread slices.",
+      "image": "https://drive.google.com/file/d/1DYevbtohXD9gfvuiU6LdYj2OaUzW04WG/view?usp=drive_link"
+    },
+    {
+      "title": "Chickpea and Avocado Salad",
+      "ingredients": [
+        "200 g canned chickpeas, rinsed",
+        "75 g avocado, diced",
+        "40 g diced cucumber",
+        "30 g lemon juice",
+        "Salt and pepper to taste"
+      ],
+      "calories": 400,
+      "instructions": "In a bowl, mix chickpeas, avocado, and cucumber. Drizzle with lemon juice and season with salt and pepper.",
+      "image": "https://drive.google.com/file/d/1aq1Qbd8IWVeg2ko_KaGM9hJDNLhThC84/view?usp=drive_link"
+    },
+    {
+      "title": "Chicken & Veggie Stir-Fry",
+      "ingredients": [
+        "113 g chicken breast, sliced",
+        "150 g mixed vegetables (broccoli, bell peppers, snow peas)",
+        "15 g soy sauce",
+        "5 g sesame oil",
+        "1 clove garlic, minced",
+        "100 g cooked brown rice"
+      ],
+      "calories": 350,
+      "instructions": "In a skillet, heat sesame oil and sauté garlic. Add chicken and cook until browned. Stir in vegetables and soy sauce, cooking for 5-7 minutes. Serve over cooked brown rice.",
+      "image": "https://drive.google.com/file/d/1xwDUpQpCRAwqC4EEfj23pql834kJyYrh/view?usp=drive_link"
+    },
+    {
+      "title": "Chicken Caesar Salad",
+      "ingredients": [
+        "113 g grilled chicken breast",
+        "60 g romaine lettuce",
+        "30 g light Caesar dressing",
+        "15 g grated Parmesan cheese",
+        "40 g croutons"
+      ],
+      "calories": 400,
+      "instructions": "Toss the romaine lettuce with Caesar dressing, Parmesan cheese, and croutons. Top with sliced grilled chicken.",
+      "image": "https://drive.google.com/file/d/1TmLGMUb7KGYwT2SdZzDaMqNzB-ZL8Ha7/view?usp=drive_link"
+    },
+    {
+      "title": "Vegetable and Hummus Wrap",
+      "ingredients": [
+        "1 whole wheat tortilla",
+        "30 g hummus",
+        "60 g shredded carrots",
+        "40 g diced cucumber",
+        "40 g bell peppers, sliced",
+        "15 g spinach leaves"
+      ],
+      "calories": 300,
+      "instructions": "Spread hummus on the tortilla. Layer with carrots, cucumber, bell peppers, and spinach leaves. Roll up and slice.",
+      "image": "https://drive.google.com/file/d/1CKzDDlW7t0-12wE6S5ekc6C5KOtlDTbj/view?usp=drive_link"
+    },
+    {
+      "title": "Grilled Shrimp and Veggie Salad",
+      "ingredients": [
+        "170 g grilled shrimp",
+        "60 g mixed greens",
+        "150 g diced cucumber",
+        "60 g cherry tomatoes",
+        "30 g lemon vinaigrette"
+      ],
+      "calories": 350,
+      "instructions": "Grill shrimp and set aside. Toss mixed greens, cucumber, and cherry tomatoes with lemon vinaigrette. Top with grilled shrimp.",
+      "image": "https://drive.google.com/file/d/1LxqhxgAoII43s0dgwEvMqciI-yCf_O4Y/view?usp=drive_link"
+    }
+  ],
+  "dinner": [
+    {
+      "title": "Spinach, Tomato & Feta Cheese Stuffed Chicken Breast with Brown Rice",
+      "ingredients": [
+        "1 boneless, skinless chicken breast",
+        "15 g fresh spinach, chopped",
+        "40 g sun-dried tomatoes, chopped",
+        "40 g feta cheese, crumbled",
+        "100 g cooked brown rice",
+        "5 g olive oil",
+        "Salt and pepper to taste"
+      ],
+      "calories": 450,
+      "instructions": "Preheat oven to 375°F (190°C). Slice the chicken breast horizontally to create a pocket. In a bowl, mix spinach, sun-dried tomatoes, and feta cheese. Stuff the mixture into the chicken breast and secure with toothpicks. Season with salt and pepper. Heat olive oil in a skillet over medium heat and sear the chicken for 2-3 minutes on each side. Transfer to a baking dish and bake for 20-25 minutes until cooked through. Serve with cooked brown rice.",
+      "image": "https://drive.google.com/file/d/1LW34OuuJr6oDa-bxkkaPQ524_MGAs8sV/view?usp=drive_link"
+    },
+    {
+      "title": "Grilled Salmon with Quinoa and Steamed Broccoli",
+      "ingredients": [
+        "1 salmon fillet (170 g)",
+        "85 g cooked quinoa",
+        "150 g broccoli florets",
+        "15 g lemon juice",
+        "5 g olive oil",
+        "Salt and pepper to taste"
+      ],
+      "calories": 500,
+      "instructions": "Preheat grill to medium-high heat. Season salmon with lemon juice, salt, and pepper. Grill salmon for 4-5 minutes on each side until cooked through. Steam broccoli until tender. Serve salmon with quinoa and steamed broccoli, drizzled with olive oil.",
+      "image": "https://drive.google.com/file/d/1GRSUsKpKP3YBEChdUO_HPpNctbaKNLNA/view?usp=drive_link"
+    },
+    {
+      "title": "Quinoa and Chickpea Salad",
+      "ingredients": [
+        "85 g cooked quinoa",
+        "100 g canned chickpeas, rinsed and drained",
+        "40 g diced cucumber",
+        "40 g cherry tomatoes, halved",
+        "30 g chopped red onion",
+        "30 g lemon juice",
+        "15 g olive oil",
+        "Salt and pepper to taste"
+      ],
+      "calories": 400,
+      "instructions": "In a large bowl, combine quinoa, chickpeas, cucumber, cherry tomatoes, and red onion. In a small bowl, whisk together lemon juice, olive oil, salt, and pepper. Pour dressing over salad and toss to combine. Chill before serving.",
+      "image": "https://drive.google.com/file/d/14j1PnUaXxRHpdtac4SqU2F6idjaBg-0-/view?usp=drive_link"
+    },
+    {
+      "title": "Turkey Bolognese with Whole Wheat Spaghetti",
+      "ingredients": [
+        "113 g ground turkey",
+        "120 g marinara sauce",
+        "120 g diced tomatoes",
+        "40 g chopped onion",
+        "1 clove garlic, minced",
+        "5 g dried oregano",
+        "5 g dried basil",
+        "100 g cooked whole wheat spaghetti",
+        "5 g olive oil",
+        "Salt and pepper to taste"
+      ],
+      "calories": 480,
+      "instructions": "Heat olive oil in a skillet over medium heat. Add onion and garlic; sauté until translucent. Add ground turkey and cook until browned. Stir in marinara sauce, diced tomatoes, oregano, basil, salt, and pepper. Simmer for 15 minutes. Serve over cooked whole wheat spaghetti.",
+      "image": "https://drive.google.com/file/d/107acCKxuEyzMJVM0Htby4-O1YXe7DOpX/view?usp=drive_link"
+    },
+    {
+      "title": "Grilled Chicken with Sweet Potato and Green Beans",
+      "ingredients": [
+        "1 boneless, skinless chicken breast",
+        "1 medium sweet potato, peeled and cubed",
+        "150 g green beans, trimmed",
+        "5 g olive oil",
+        "5 g paprika",
+        "Salt and pepper to taste"
+      ],
+      "calories": 450,
+      "instructions": "Preheat grill to medium-high heat. Season chicken with paprika, salt, and pepper. Grill chicken for 6-7 minutes on each side until cooked through. Meanwhile, steam sweet potato cubes and green beans until tender. Drizzle vegetables with olive oil and serve alongside grilled chicken.",
+      "image": "https://drive.google.com/file/d/1zu9_0uqiKj63muo3WAOumMqr_9ngKsQV/view?usp=drive_link"
+    },
+    {
+      "title": "Shrimp Stir-Fry with Brown Rice",
+      "ingredients": [
+        "170 g shrimp, peeled and deveined",
+        "150 g mixed vegetables (bell peppers, broccoli, carrots)",
+        "1 clove garlic, minced",
+        "15 g low-sodium soy sauce",
+        "5 g sesame oil",
+        "5 g grated ginger",
+        "100 g cooked brown rice"
+      ],
+      "calories": 420,
+      "instructions": "Heat sesame oil in a wok over medium-high heat. Add garlic and ginger; sauté for 30 seconds. Add shrimp and cook until pink. Add mixed vegetables and stir-fry until tender-crisp. Stir in soy sauce and cook for another minute. Serve over cooked brown rice.",
+      "image": "https://drive.google.com/file/d/1c_25RPQvCjOhhI7aM6VQxs-hPE9XZmlJ/view?usp=drive_link"
+    },
+    {
+      "title": "Lentil and Vegetable Stew",
+      "ingredients": [
+        "100 g dried lentils, rinsed",
+        "240 g diced tomatoes",
+        "60 g chopped carrots",
+        "60 g chopped celery",
+        "40 g chopped onion",
+        "480 g vegetable broth",
+        "5 g olive oil",
+        "5 g dried thyme",
+        "Salt and pepper to taste"
+      ],
+      "calories": 380,
+      "instructions": "Heat olive oil in a pot over medium heat. Add onion, carrots, and celery; sauté until softened. Add lentils, diced tomatoes, vegetable broth, thyme, salt, and pepper. Bring to a boil, then reduce heat and simmer for 30-35 minutes until lentils are tender.",
+      "image": "https://drive.google.com/file/d/1Cclr9UpIVKEDnm4A9cKabQ5n9VbcNf0_/view?usp=drive_link"
+    },
+    {
+      "title": "Tofu and Vegetable Stir-Fry with Brown Rice",
+      "ingredients": [
+        "113 g firm tofu, cubed",
+        "150 g mixed vegetables (broccoli, bell peppers, snap peas)",
+        "1 clove garlic, minced",
+        "15 g low-sodium soy sauce",
+        "5 g sesame oil",
+        "100 g cooked brown rice"
+      ],
+      "calories": 400,
+      "instructions": "Heat sesame oil in a skillet over medium-high heat. Add garlic and tofu; cook until tofu is golden brown. Add mixed vegetables and stir-fry until tender-crisp. Stir in soy sauce and cook for another minute. Serve over cooked brown rice.",
+      "image": "https://drive.google.com/file/d/1DR5VrWUIw4cG-15Btah-WxT8R_huijcm/view?usp=drive_link"
+    },
+    {
+      "title": "Baked Cod with Roasted Vegetables",
+      "ingredients": [
+        "1 cod fillet (170 g)",
+        "60 g cherry tomatoes",
+        "75 g zucchini slices",
+        "75 g bell pepper strips",
+        "5 g olive oil",
+        "5 g dried oregano",
+        "Salt and pepper to taste"
+      ],
+      "calories": 410,
+      "instructions": "Preheat oven to 400°F (200°C). Place cod fillet on a baking sheet lined with parchment paper. Arrange cherry tomatoes, zucchini, and bell peppers around the fish. Drizzle with olive oil and sprinkle with oregano, salt, and pepper. Bake for 15-20 minutes until fish is cooked through and vegetables are tender.",
+      "image": "https://drive.google.com/file/d/1Jst-jsO4-hM9F4xfdCIzjs6S4E-ZgbuY/view?usp=drive_link"
+    },
+    {
+      "title": "Chickpea and Spinach Curry",
+      "ingredients": [
+        "100 g canned chickpeas, rinsed and drained",
+        "30 g fresh spinach leaves",
+        "120 g diced tomatoes",
+        "40 g chopped onion",
+        "1 clove garlic, minced",
+        "5 g curry powder",
+        "5 g ground cumin",
+        "5 g ground turmeric",
+        "5 g olive oil",
+        "Salt and pepper to taste"
+      ],
+      "calories": 390,
+      "instructions": "Heat olive oil in a skillet over medium heat. Add onion and garlic; sauté until translucent. Stir in curry powder, cumin, and turmeric; cook for 1 minute. Add chickpeas and diced tomatoes; simmer for 10 minutes. Add spinach and cook until wilted. Season with salt and pepper.",
+      "image": "https://drive.google.com/file/d/1li7cDpouZKLyjVFEFTw0B_W3AjPpKqGs/view?usp=drive_link"
+    }
+  ]
+}
