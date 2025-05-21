@@ -5,6 +5,7 @@ import { useColorScheme } from 'react-native';
 import { Colors } from '../constants/Colors';
 import { UserProvider } from '../contexts/UserContext';
 import { DashboardProvider } from "../contexts/DashboardContext"
+import { ProfileProvider } from "../contexts/ProfileContext"
 
 
 export default function RootLayout() {
@@ -14,6 +15,7 @@ export default function RootLayout() {
   return (
     <UserProvider>
       <DashboardProvider>
+      <ProfileProvider>
       <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
       <Stack 
         screenOptions={{
@@ -21,6 +23,7 @@ export default function RootLayout() {
           contentStyle: { backgroundColor: theme.background }
         }}
       />
+      </ProfileProvider>
       </DashboardProvider>
     </UserProvider>
   );

@@ -46,3 +46,4 @@ const ThemedText = ({ style, variant = 'body', children }) => {
 export default ThemedText;
 
 const styles = StyleSheet.create({});
+
