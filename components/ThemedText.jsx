@@ -1,12 +1,9 @@
 import { StyleSheet, Text } from 'react-native';
 import React from 'react';
-import { useColorScheme } from 'react-native';
-import { Colors } from '../constants/Colors';
+import { useTheme } from '../hooks/useTheme';
 
 const ThemedText = ({ style, variant = 'body', children }) => {
-  const colorScheme = useColorScheme();
-  const isDark = colorScheme === 'dark';
-  const colors = isDark ? Colors.dark : Colors.light;
+  const { theme } = useTheme();
   
   const getVariantStyle = () => {
     switch (variant) {
@@ -14,24 +11,24 @@ const ThemedText = ({ style, variant = 'body', children }) => {
         return {
           fontSize: 24,
           fontWeight: 'bold',
-          color: colors.title,
+          color: theme.title,
         };
       case 'subtitle':
         return {
           fontSize: 18,
           fontWeight: '600',
-          color: colors.title,
+          color: theme.title,
         };
       case 'body':
       default:
         return {
           fontSize: 16,
-          color: colors.text,
+          color: theme.text,
         };
       case 'caption':
         return {
           fontSize: 14,
-          color: colors.iconColor,
+          color: theme.iconColor,
         };
     }
   };
@@ -46,4 +43,3 @@ const ThemedText = ({ style, variant = 'body', children }) => {
 export default ThemedText;
 
 const styles = StyleSheet.create({});
-

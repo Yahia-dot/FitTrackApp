@@ -49,8 +49,8 @@ export const ProfileProvider = ({ children }) => {
 
     try {
       const res = await databases.updateDocument(
-        DATABASE_ID,
-        USER_PROFILES_COLLECTION,
+        appwriteDatabaseId,
+        userProfiles,
         profile.$id,
         { ...updates }
       )
@@ -66,8 +66,8 @@ export const ProfileProvider = ({ children }) => {
   async function createProfile(data) {
     try {
       const res = await databases.createDocument(
-        DATABASE_ID,
-        USER_PROFILES_COLLECTION,
+        appwriteDatabaseId,
+        userProfiles,
         ID.unique(),
         { ...data, userId: user.$id },
         [
@@ -89,8 +89,8 @@ export const ProfileProvider = ({ children }) => {
 
     try {
       await databases.deleteDocument(
-        DATABASE_ID,
-        USER_PROFILES_COLLECTION,
+        appwriteDatabaseId,
+        userProfiles,
         profile.$id
       )
       setProfile(null)

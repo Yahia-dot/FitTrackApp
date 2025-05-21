@@ -1,14 +1,11 @@
 import { StyleSheet, Animated, View } from 'react-native';
 import React, { useEffect, useRef } from 'react';
 import { FontAwesome5 } from '@expo/vector-icons';
-import { useColorScheme } from 'react-native';
 import { Colors } from '../constants/Colors';
+import { useTheme } from '../hooks/useTheme';
 
 const ThemedLogo = ({ size = 24, animated = true, style }) => {
-  const colorScheme = useColorScheme();
-  const isDark = colorScheme === 'dark';
-  const colors = isDark ? Colors.dark : Colors.light;
-  
+  const { theme } = useTheme();
   const spinValue = useRef(new Animated.Value(0)).current;
   
   useEffect(() => {

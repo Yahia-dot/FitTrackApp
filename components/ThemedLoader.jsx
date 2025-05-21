@@ -1,14 +1,11 @@
 import { StyleSheet, View, ActivityIndicator, Animated } from 'react-native';
 import React, { useEffect, useRef } from 'react';
-import { useColorScheme } from 'react-native';
 import { Colors } from '../constants/Colors';
 import ThemedText from './ThemedText';
+import { useTheme } from '../hooks/useTheme';
 
 const ThemedLoader = ({ size = 'large', text, style }) => {
-  const colorScheme = useColorScheme();
-  const isDark = colorScheme === 'dark';
-  const colors = isDark ? Colors.dark : Colors.light;
-  
+  const { theme } = useTheme();
   const pulseAnim = useRef(new Animated.Value(1)).current;
   
   useEffect(() => {

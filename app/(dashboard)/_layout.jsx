@@ -1,113 +1,51 @@
 import React from 'react';
 import { Tabs } from 'expo-router';
-import { useColorScheme } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
-import { Colors } from '../../constants/Colors';
-
-// Import UserOnly component
 import UserOnly from '../../components/auth/UserOnly';
+import { useTheme } from '../../hooks/useTheme';
 
 export default function DashboardLayout() {
-  const colorScheme = useColorScheme();
-  const theme = Colors[colorScheme] ?? Colors.light;
+  const { theme } = useTheme();
 
   return (
     <UserOnly>
       <Tabs
         screenOptions={{
           headerShown: false,
-          tabBarStyle: { 
-            backgroundColor: theme.navBackground, 
-            paddingTop: 10, 
-            height: 90 
+          tabBarStyle: {
+            backgroundColor: theme.navBackground,
+            height: 75,
+            borderTopWidth: 0.5,
+            borderTopColor: theme.iconColor + '33', // subtle border
+            elevation: 0,
+          },
+          tabBarLabelStyle: {
+            fontSize: 10,
+            marginBottom: 4,
           },
           tabBarActiveTintColor: theme.iconColorFocused,
           tabBarInactiveTintColor: theme.iconColor,
         }}
       >
-        <Tabs.Screen
-          name="index"
-          options={{ 
-            title: "Home", 
-            tabBarIcon: ({ focused, color }) => (
-              <FontAwesome5
-                size={24}
-                name={focused ? 'home' : 'home'}
-                color={color}
-              />
-            )
-          }}
-        />
-        
-        <Tabs.Screen
-          name="workout"
-          options={{ 
-            title: "Workouts", 
-            tabBarIcon: ({ focused, color }) => (
-              <FontAwesome5
-                size={24}
-                name={focused ? 'dumbbell' : 'dumbbell'}
-                color={color}
-              />
-            )
-          }}
-        />
-        
-        <Tabs.Screen
-          name="nutrition"
-          options={{ 
-            title: "Nutrition", 
-            tabBarIcon: ({ focused, color }) => (
-              <FontAwesome5
-                size={24}
-                name={focused ? 'apple-alt' : 'apple-alt'}
-                color={color}
-              />
-            )
-          }}
-        />
-
-        <Tabs.Screen
-          name="progress" 
-          options={{ 
-            title: "Progress", 
-            tabBarIcon: ({ focused, color }) => (
-              <FontAwesome5
-                size={24}
-                name={focused ? 'chart-line' : 'chart-line'}
-                color={color}
-              />
-            )
-          }}
-        />
-
-        <Tabs.Screen
-          name="profile"
-          options={{ 
-            title: "Profile", 
-            tabBarIcon: ({ focused, color }) => (
-              <FontAwesome5
-                size={24}
-                name={focused ? 'user' : 'user'}
-                color={color}
-              />
-            )
-          }}
-        />
-
-        <Tabs.Screen
-          name="settings" 
-          options={{ 
-            title: "Settings", 
-            tabBarIcon: ({ focused, color }) => (
-              <FontAwesome5
-                size={24}
-                name={focused ? 'cog' : 'cog'}
-                color={color}
-              />
-            )
-          }}
-        />
+        {[
+          { name: 'index', title: 'Home', icon: 'home' },
+          { name: 'workout', title: 'Workouts', icon: 'dumbbell' },
+          { name: 'nutrition', title: 'Nutrition', icon: 'apple-alt' },
+          { name: 'progress', title: 'Progress', icon: 'chart-line' },
+          { name: 'profile', title: 'Profile', icon: 'user' },
+          { name: 'settings', title: 'Settings', icon: 'cog' },
+        ].map(({ name, title, icon }) => (
+          <Tabs.Screen
+            key={name}
+            name={name}
+            options={{
+              title,
+              tabBarIcon: ({ color }) => (
+                <FontAwesome5 name={icon} size={20} color={color} />
+              ),
+            }}
+          />
+        ))}
       </Tabs>
     </UserOnly>
   );

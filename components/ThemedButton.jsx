@@ -1,8 +1,8 @@
 import { StyleSheet, TouchableOpacity, ActivityIndicator } from 'react-native';
 import React from 'react';
-import { useColorScheme } from 'react-native';
 import { Colors } from '../constants/Colors';
 import ThemedText from './ThemedText';
+import { useTheme } from '../hooks/useTheme';
 
 const ThemedButton = ({ 
   title, 
@@ -15,9 +15,7 @@ const ThemedButton = ({
   rightIcon,
   style 
 }) => {
-  const colorScheme = useColorScheme();
-  const isDark = colorScheme === 'dark';
-  const colors = isDark ? Colors.dark : Colors.light;
+  const { theme } = useTheme();
   
   const getVariantStyle = () => {
     switch (variant) {

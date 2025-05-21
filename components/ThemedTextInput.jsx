@@ -1,8 +1,8 @@
 import { StyleSheet, TextInput, View } from 'react-native';
 import React, { useState } from 'react';
-import { useColorScheme } from 'react-native';
 import { Colors } from '../constants/Colors';
 import ThemedText from './ThemedText';
+import { useTheme } from '../hooks/useTheme';
 
 const ThemedTextInput = ({ 
   label, 
@@ -12,9 +12,7 @@ const ThemedTextInput = ({
   secureTextEntry = false,
   style 
 }) => {
-  const colorScheme = useColorScheme();
-  const isDark = colorScheme === 'dark';
-  const colors = isDark ? Colors.dark : Colors.light;
+  const { theme } = useTheme();
   const [isFocused, setIsFocused] = useState(false);
   
   return (
@@ -24,13 +22,13 @@ const ThemedTextInput = ({
         style={[
           styles.input,
           {
-            backgroundColor: colors.uiBackground,
-            color: colors.text,
-            borderColor: isFocused ? Colors.primary : colors.iconColor,
+            backgroundColor: theme.uiBackground,
+            color: theme.text,
+            borderColor: isFocused ? Colors.primary : theme.iconColor,
           }
         ]}
         placeholder={placeholder}
-        placeholderTextColor={colors.iconColor}
+        placeholderTextColor={theme.iconColor}
         value={value}
         onChangeText={onChangeText}
         secureTextEntry={secureTextEntry}

@@ -10,12 +10,12 @@ import ThemedLogo from '../components/ThemedLogo';
 import ThemedButton from '../components/ThemedButton';
 import Spacer from '../components/Spacer';
 import { Colors } from '../constants/Colors';
+import { useTheme } from '../hooks/useTheme';
 
 const Index = () => {
   const router = useRouter(); // Use Expo Router's router
-  const colorScheme = useColorScheme();
-  const isDark = colorScheme === 'dark';
-  const colors = isDark ? Colors.dark : Colors.light;
+  const { theme: colors, isDark } = useTheme(); // Replace useColorScheme
+
 
   return (
     <ThemedView>

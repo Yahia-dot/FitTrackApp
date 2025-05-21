@@ -1,20 +1,17 @@
-import { StyleSheet, Text, View, SafeAreaView, ImageBackground, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, ImageBackground, ScrollView, TouchableOpacity } from 'react-native';
 import React from 'react';
 import ThemedView from '../../components/ThemedView';
 import { useDashboard } from '../../hooks/useDashboard';
 import Spacer from '../../components/Spacer';
 import ThemedText from '../../components/ThemedText';
-import ThemedLogo from '../../components/ThemedLogo';
 import Header from '../../components/Header';
-import { useColorScheme } from 'react-native';
 import { Colors } from '../../constants/Colors';
 import { FontAwesome5 } from '@expo/vector-icons';
+import { useTheme } from '../../hooks/useTheme';
 
 const Home = () => {
   const { userName, caloriesToday, todayWorkout, weeklyProgress } = useDashboard();
-  const colorScheme = useColorScheme();
-  const isDark = colorScheme === 'dark';
-  const colors = isDark ? Colors.dark : Colors.light;
+  const { theme } = useTheme();
   
   // Get today's date
   const today = new Date();
@@ -60,13 +57,13 @@ const Home = () => {
         {/* Today's Overview Section */}
         <View style={styles.sectionHeader}>
           <ThemedText variant="subtitle" style={styles.sectionTitle}>Today's Overview</ThemedText>
-          <FontAwesome5 name="calendar-day" size={16} color={colors.text} />
+          <FontAwesome5 name="calendar-day" size={16} color={theme.text} />
         </View>
         
         {/* Cards Row: Calories and Workout */}
         <View style={styles.cardsRow}>
           {/* Today's Calories Card */}
-          <View style={[styles.card, styles.halfCard, { backgroundColor: colors.uiBackground }]}>
+          <View style={[styles.card, styles.halfCard, { backgroundColor: theme.uiBackground }]}>
             <View style={styles.cardHeader}>
               <ThemedText variant="subtitle" style={styles.cardTitle}>Calories</ThemedText>
               <View style={[styles.iconCircle, { backgroundColor: Colors.primary }]}>
@@ -79,10 +76,10 @@ const Home = () => {
           </View>
           
           {/* Today's Workout Card */}
-          <View style={[styles.card, styles.halfCard, { backgroundColor: colors.uiBackground }]}>
+          <View style={[styles.card, styles.halfCard, { backgroundColor: theme.uiBackground }]}>
             <View style={styles.cardHeader}>
               <ThemedText variant="subtitle" style={styles.cardTitle}>Workout</ThemedText>
-              <View style={[styles.iconCircle, { backgroundColor: Colors.secondary }]}>
+              <View style={[styles.iconCircle, { backgroundColor: Colors.primary }]}>
                 <FontAwesome5 name="dumbbell" size={16} color="#fff" />
               </View>
             </View>
@@ -104,14 +101,14 @@ const Home = () => {
         {/* Weekly Progress Section */}
         <View style={styles.sectionHeader}>
           <ThemedText variant="subtitle" style={styles.sectionTitle}>Your Progress</ThemedText>
-          <FontAwesome5 name="chart-line" size={16} color={colors.text} />
+          <FontAwesome5 name="chart-line" size={16} color={theme.text} />
         </View>
         
         {/* Weekly Progress Card - Redesigned */}
-        <View style={[styles.card, { backgroundColor: colors.uiBackground }]}>
+        <View style={[styles.card, { backgroundColor: theme.uiBackground }]}>
           <View style={styles.progressHeader}>
             <ThemedText variant="subtitle" style={styles.cardTitle}>Weekly Workout Streak</ThemedText>
-            <FontAwesome5 name="calendar-check" size={16} color={colors.text} />
+            <FontAwesome5 name="calendar-check" size={16} color={theme.text} />
           </View>
           
           <View style={styles.progressContainer}>
