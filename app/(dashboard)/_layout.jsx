@@ -1,4 +1,3 @@
-// _layout.jsx for (dashboard) folder
 import React from 'react';
 import { Tabs } from 'expo-router';
 import { useColorScheme } from 'react-native';
@@ -27,13 +26,13 @@ export default function DashboardLayout() {
         }}
       >
         <Tabs.Screen
-          name="index" // Home tab - maps to dashboard/index.js
+          name="index"
           options={{ 
-            title: "Dashboard", 
+            title: "Home", 
             tabBarIcon: ({ focused, color }) => (
               <FontAwesome5
                 size={24}
-                name={focused ? 'tachometer-alt' : 'tachometer-alt'}
+                name={focused ? 'home' : 'home'}
                 color={color}
               />
             )
@@ -41,7 +40,7 @@ export default function DashboardLayout() {
         />
         
         <Tabs.Screen
-          name="workout" // Workout tab - maps to dashboard/workout.js
+          name="workout"
           options={{ 
             title: "Workouts", 
             tabBarIcon: ({ focused, color }) => (
@@ -53,22 +52,9 @@ export default function DashboardLayout() {
             )
           }}
         />
-
+        
         <Tabs.Screen
-          name="create" // Profile tab - maps to dashboard/profile.js
-          options={{ 
-            title: "Create Plan", 
-            tabBarIcon: ({ focused, color }) => (
-              <FontAwesome5
-                size={24}
-                name={focused ? 'plus' : 'plus'}
-                color={color}
-              />
-            )
-          }}
-        />
-        <Tabs.Screen
-          name="nutrition" // Nutrition tab - maps to dashboard/nutrition.js
+          name="nutrition"
           options={{ 
             title: "Nutrition", 
             tabBarIcon: ({ focused, color }) => (
@@ -80,8 +66,37 @@ export default function DashboardLayout() {
             )
           }}
         />
+
         <Tabs.Screen
-          name="settings" // Settings tab - maps to dashboard/settings.js
+          name="progress" 
+          options={{ 
+            title: "Progress", 
+            tabBarIcon: ({ focused, color }) => (
+              <FontAwesome5
+                size={24}
+                name={focused ? 'chart-line' : 'chart-line'}
+                color={color}
+              />
+            )
+          }}
+        />
+
+        <Tabs.Screen
+          name="profile"
+          options={{ 
+            title: "Profile", 
+            tabBarIcon: ({ focused, color }) => (
+              <FontAwesome5
+                size={24}
+                name={focused ? 'user' : 'user'}
+                color={color}
+              />
+            )
+          }}
+        />
+
+        <Tabs.Screen
+          name="settings" 
           options={{ 
             title: "Settings", 
             tabBarIcon: ({ focused, color }) => (

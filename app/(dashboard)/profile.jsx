@@ -2,14 +2,14 @@ import { StyleSheet, Text, View } from 'react-native'
 import ThemedView from '../../components/ThemedView'
 import React from 'react'
 
-const Nutrition = () => {
+const Profile = () => {
   return (
     <ThemedView>
-      <Text>Nutrition</Text>
+      <Text>Profile</Text>
     </ThemedView>
   )
 }
 
-export default Nutrition
+export default Profile
 
 const styles = StyleSheet.create({})

@@ -18,6 +18,7 @@ const Index = () => {
   const colors = isDark ? Colors.dark : Colors.light;
 
   return (
+    <ThemedView>
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.background }}>
       <StatusBar
         barStyle={isDark ? 'light-content' : 'dark-content'}
@@ -64,6 +65,7 @@ const Index = () => {
         </ThemedText>
       </ThemedView>
     </SafeAreaView>
+    </ThemedView>
   );
 };
 

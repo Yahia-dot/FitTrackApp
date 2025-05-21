@@ -1,12 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
 import ThemedView from '../../components/ThemedView'
-
+import React from 'react'
 
 const Workout = () => {
   return (
     <ThemedView>
-        <Text>Workout</Text>
+      <Text>Workout</Text>
     </ThemedView>
   )
 }

@@ -1,16 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
 import ThemedView from '../../components/ThemedView'
+import React from 'react'
 
-
-const Create = () => {
+const Progress = () => {
   return (
     <ThemedView>
-      <Text>Create</Text>
+      <Text>Progress</Text>
     </ThemedView>
   )
 }
 
-export default Create
+export default Progress
 
 const styles = StyleSheet.create({})

@@ -2,15 +2,18 @@ import React from 'react';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useColorScheme } from 'react-native';
-import { AppProviders } from '../contexts/AppProviders';
 import { Colors } from '../constants/Colors';
+import { UserProvider } from '../contexts/UserContext';
+import { DashboardProvider } from "../contexts/DashboardContext"
+
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const theme = Colors[colorScheme] ?? Colors.light;
 
   return (
-    <AppProviders>
+    <UserProvider>
+      <DashboardProvider>
       <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
       <Stack 
         screenOptions={{
@@ -18,6 +21,7 @@ export default function RootLayout() {
           contentStyle: { backgroundColor: theme.background }
         }}
       />
-    </AppProviders>
+      </DashboardProvider>
+    </UserProvider>
   );
 }
