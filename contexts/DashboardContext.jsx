@@ -9,7 +9,6 @@ const {
   userProfiles,
   nutritionProgress,
   workoutSchedules,
-  workoutProgress,
 } = Constants.expoConfig.extra;
 
 const DashboardContext = createContext();
@@ -18,18 +17,20 @@ export const DashboardProvider = ({ children }) => {
   const { user } = useUser();
   const [caloriesToday, setCaloriesToday] = useState(0);
   const [todayWorkout, setTodayWorkout] = useState(null);
-  const [weeklyProgress, setWeeklyProgress] = useState([]);
   const [userName, setUserName] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const todayDate = new Date().toISOString().split("T")[0];
-  const todayDayOfWeek = new Date().getDay();
+  const todayDayOfWeek = new Date().getDay(); // Sunday = 0
 
   useEffect(() => {
     if (!user) return;
 
     async function loadDashboardData() {
+      setLoading(true);
       try {
-        // 1. Load user's name from UserProfiles
+        // 1. Load user's name
         const profileRes = await databases.listDocuments(
           appwriteDatabaseId,
           userProfiles,
@@ -39,17 +40,22 @@ export const DashboardProvider = ({ children }) => {
           setUserName(profileRes.documents[0].name);
         }
 
-        // 2. Load calories for today
+        // 2. Load today's calorie progress
         const nutritionRes = await databases.listDocuments(
           appwriteDatabaseId,
           nutritionProgress,
-          [Query.equal("userId", user.$id), Query.equal("date", todayDate)]
+          [
+            Query.equal("userId", user.$id),
+            Query.equal("date", todayDate),
+          ]
         );
         if (nutritionRes.documents.length > 0) {
-          setCaloriesToday(nutritionRes.documents[0].caloriesConsumed);
+          setCaloriesToday(nutritionRes.documents[0].caloriesConsumed || 0);
+        } else {
+          setCaloriesToday(0);
         }
 
-        // 3. Load today’s workout schedule
+        // 3. Load today’s scheduled workout (based on dayOfWeek)
         const workoutRes = await databases.listDocuments(
           appwriteDatabaseId,
           workoutSchedules,
@@ -57,24 +63,14 @@ export const DashboardProvider = ({ children }) => {
         );
         if (workoutRes.documents.length > 0) {
           setTodayWorkout(workoutRes.documents[0]);
+        } else {
+          setTodayWorkout(null);
         }
-
-        // 4. Weekly workout progress
-        const progressRes = await databases.listDocuments(
-          appwriteDatabaseId,
-          workoutProgress,
-          [Query.equal("userId", user.$id)]
-        );
-        const week = progressRes.documents.filter(doc => {
-          const d = new Date(doc.date);
-          const now = new Date();
-          const startOfWeek = new Date(now.setDate(now.getDate() - now.getDay()));
-          return d >= startOfWeek;
-        });
-
-        setWeeklyProgress(week);
       } catch (err) {
         console.error("Dashboard data error:", err.message);
+        setError(err.message);
+      } finally {
+        setLoading(false);
       }
     }
 
@@ -82,7 +78,15 @@ export const DashboardProvider = ({ children }) => {
   }, [user]);
 
   return (
-    <DashboardContext.Provider value={{ userName, caloriesToday, todayWorkout, weeklyProgress }}>
+    <DashboardContext.Provider
+      value={{
+        userName,
+        caloriesToday,
+        todayWorkout,
+        loading,
+        error,
+      }}
+    >
       {children}
     </DashboardContext.Provider>
   );

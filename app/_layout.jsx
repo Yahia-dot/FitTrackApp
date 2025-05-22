@@ -6,6 +6,8 @@ import { UserProvider } from '../contexts/UserContext';
 import { DashboardProvider } from "../contexts/DashboardContext";
 import { ProfileProvider } from "../contexts/ProfileContext";
 import { SettingsProvider } from '../contexts/SettingsContext';
+import { ProgressProvider } from '../contexts/ProgressContext';
+
 import { ThemeProvider } from '../contexts/ThemeContext';
 import { useTheme } from '../hooks/useTheme';
 
@@ -32,9 +34,11 @@ export default function RootLayout() {
       <SettingsProvider>
         <ThemeProvider>
           <DashboardProvider>
-            <ProfileProvider>
-              <AppLayout />
-            </ProfileProvider>
+            <ProgressProvider> 
+              <ProfileProvider>
+                <AppLayout />
+              </ProfileProvider>
+            </ProgressProvider>
           </DashboardProvider>
         </ThemeProvider>
       </SettingsProvider>

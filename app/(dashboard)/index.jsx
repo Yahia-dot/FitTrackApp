@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, SafeAreaView, ImageBackground, ScrollView, Touc
 import React from 'react';
 import ThemedView from '../../components/ThemedView';
 import { useDashboard } from '../../hooks/useDashboard';
+import { useProgress } from '../../hooks/useProgress'; 
 import Spacer from '../../components/Spacer';
 import ThemedText from '../../components/ThemedText';
 import Header from '../../components/Header';
@@ -10,10 +11,10 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { useTheme } from '../../hooks/useTheme';
 
 const Home = () => {
-  const { userName, caloriesToday, todayWorkout, weeklyProgress } = useDashboard();
+  const { userName, caloriesToday, todayWorkout } = useDashboard();
+  const { weeklyProgress } = useProgress(); 
   const { theme } = useTheme();
-  
-  // Get today's date
+
   const today = new Date();
   const options = { weekday: 'long', month: 'long', day: 'numeric' };
   const formattedDate = today.toLocaleDateString('en-US', options);
