@@ -1,4 +1,5 @@
 // app/index.js
+import "react-native-url-polyfill/auto";
 import React from 'react';
 import { StyleSheet, View, SafeAreaView, StatusBar, useColorScheme } from 'react-native';
 import { useRouter } from 'expo-router'; // Import useRouter instead of useNavigation
